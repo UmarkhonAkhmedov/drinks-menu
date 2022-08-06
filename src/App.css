@@ -1,0 +1,230 @@
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.container--main {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+/* Header */
+.site-header {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.header h2 {
+  font-weight: 600;
+  font-size: 30px;
+  color: rgb(10, 95, 181);
+}
+
+/* Language */
+.lan__select {
+  border: none;
+  font-size: 18px;
+  outline: none;
+  padding: 0px;
+  cursor: pointer;
+}
+
+.lan__select option {
+  font-size: 16px;
+}
+
+/* Main */
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+.main__img {
+  position: relative;
+  width: 35%;
+  padding-bottom: 7%;
+}
+
+.main__img--img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}
+
+.main__img--title {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: absolute;
+  width: 70%;
+  top: 5%;
+  left: 10%;
+  right: 20%;
+  border: 6px solid #1b4b95;
+  height: 100%;
+  padding: 0 4% 4% 4%;
+}
+
+.drinks__text {
+  font-size: 50px;
+  font-family: "Covered By Your Grace", cursive;
+  color: #1b4b95;
+}
+.dial {
+  background-color: #ba0663;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 80px;
+  height: 80px;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+}
+
+.main__img--title__subtitle {
+  display: flex;
+  align-items: center;
+  color: #89cff0;
+  font-weight: bold;
+}
+
+.main__img--title__subtitle span {
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.main__info {
+  width: 60%;
+}
+
+table {
+  width: 100%;
+  text-align: left;
+}
+
+th {
+  color: #6fc6ee;
+  padding: 5px 0 0px 0;
+  font-weight: bold;
+}
+
+td {
+  color: #3978a3;
+  font-weight: bold;
+}
+.first {
+  color: #3b91b2;
+}
+.red {
+  color: #d12b81;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .container--main {
+    padding: 0 10px;
+  }
+  .drinks__text {
+    font-size: 45px;
+    font-family: "Covered By Your Grace", cursive;
+    color: rgb(10, 95, 181);
+  }
+  .main {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .main__img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .main__img--img {
+    width: 48%;
+  }
+  .main__img--title {
+    position: static;
+    top: 0;
+    right: 10%;
+    width: 48%;
+  }
+  .main__info {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 0 30px;
+  }
+  .header {
+    padding: 10px 0;
+  }
+
+  .header h2 {
+    font-size: 23px;
+  }
+  .drinks__text {
+    font-size: 35px;
+    font-family: "Covered By Your Grace", cursive;
+    color: rgb(10, 95, 181);
+  }
+  .main__img {
+    margin-bottom: 20px;
+  }
+  .main__img--title__subtitle span {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  .main__img--title {
+    position: static;
+    top: 0;
+    right: 10%;
+    width: 48%;
+    border: 4px solid #1b4b95;
+    padding: 0 2% 2% 1%;
+  }
+
+  th,
+  td,
+  tr {
+    font-size: 12px;
+  }
+
+  .lan__select {
+    border: none;
+    font-size: 14px;
+    outline: none;
+    padding: 0px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .lan__select option {
+    font-size: 12px;
+  }
+  .dial {
+    position: static;
+    font-size: 12px;
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+  }
+}
